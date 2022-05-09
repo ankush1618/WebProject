@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head runat="server">
+    <title>SEPTIC TANK CLEANING</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #c4c3c3;
+      }
+      #wrapper {
+        width: 100%;
+        max-width: 1185px;
+        margin: 2% auto;
+        background-color: rgb(251, 253, 253);
+        box-shadow: 3px 4px 4px #808080;
+        overflow: auto;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #48d4c1;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      #slider {
+        float: left;
+        width: 100%;
+        margin-top: 3%;
+      }
+      #book {
+        float: left;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form1" runat="server">
+      <div id="wrapper" style="height: 800px">
+        <h1
+          style="
+            text-align: center;
+            background-color: white;
+            text-decoration: underline;
+          "
+        >
+          Cleaning Services
+        </h1>
+        <div class="navbar">
+          <a href="/">HOME</a>
+          <a href="/about">ABOUT US</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              DOMESTIC
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/garden">GARDEN MAINTENACE</a>
+              <a href="/apartment">APARTMENT CLEANING</a>
+              <a href="/move_in">MOVE IN</a>
+              <a href="/move_out">MOVE OUT</a>
+              <a href="/renovation">AFTER RENOVATION CLEANING</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              COMMERCIAL
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/septic">SEPTIC TANK EVACUATION</a>
+              <a href="/carpet">CARPET SHAMPOOING</a>
+              <a href="/warehouse">WAREHOUSE CLEANING</a>
+              <a href="/industrial">INDUSTRIAL CLEANING</a>
+            </div>
+          </div>
+          <a href="/book">BOOK NOW</a>
+
+          <a href="/contact" style="float: right">CONTACT US</a>
+          <a href="/sign" style="float: right">SIGN UP</a>
+          <a href="/" style="float: right">LOG IN</a>
+        </div>
+
+        <div style="float: left; width: 100%; margin: 2%">
+          <h1 style="text-align: CENTER; color: #3cd3be">
+            SEPTIC TANK EVACUATION
+          </h1>
+          <div style="float: left; width: 30%; margin-top: 0%">
+            <img
+              src="/septic.jpg"
+              alt="Image"
+              style="width: 300px; height: 300px"
+            />
+          </div>
+          <div
+            style="
+              float: left;
+              width: 45%;
+              margin: 2%;
+              text-align: justify;
+              font-family: 'Times New Roman', Times, serif;
+              font-size: 18px;
+            "
+          >
+            <p>
+              Our primary focus is on the preventative maintenance of your
+              septic system. We pump tanks, vacuum lines, install sand
+              filtration and offer leach field services, all for keeping the
+              functionality of your tank effective.We provide these services on
+              a daily, weekly or monthly basis or as per site condition and your
+              requirement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

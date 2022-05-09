@@ -1,0 +1,76 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="carwashing.WebForm2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Car Wash</title>
+     <link href="Style.css" rel="stylesheet" />
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+</head>
+<body>
+    <form  action="/sub" method="post">
+       <div id="wrapper" style="height:1200px">
+                <div class="navbar">
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">OUR SERVICES</a>
+                    <a href="#">BOOK NOW</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+
+                <div id="slider">
+                    <div id="wowslider-container1">
+                     <div class="ws_images"><ul>
+		                <li><img src="data1/images/im1.jpg" alt="" title="" id="wows1_0"/></li>
+		                 <li><a href="#"><img src="data1/images/im2.jpg" alt="bootstrap slideshow" title="" id="wows1_1"/></a></li>
+		                  <li><img src="data1/images/im3.jpg" alt="" title="" id="wows1_2"/></li>
+	                        </ul></div>
+	                        <div class="ws_bullets"><div>
+		                    <a href="#" title=""><span><img src="data1/tooltips/im1.jpg" alt=""/>1</span></a>
+		                    <a href="#" title=""><span><img src="data1/tooltips/im2.jpg" alt=""/>2</span></a>
+		                    <a href="#" title=""><span><img src="data1/tooltips/im3.jpg" alt=""/>3</span></a>
+	                        </div></div><div class="ws_script" style="position:absolute;left:-99%"></div>
+                            <div class="ws_shadow"></div>
+                        </div>
+                </div>
+           <div style="float:left;width:100%;margin:2%">
+               <h1 style="TEXT-ALIGN: CENTER;color: #3cd3be;">SIGN UP</h1>
+
+           <table style="float:left;margin-left: 15%;width: 65%;background-color:lightcyan;border-radius:2px;padding:2%">
+               <tr>
+                   <td>Name</td>
+                   <td><input type="text" value=""/></td>
+                   <td></td>
+                   <td>Contact Number</td>
+                   <td><input type="text" value=""/></td>
+               </tr>   
+               <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+               </tr>   
+               
+             </table>
+               <table style="float:left;margin-left: 15%;width: 65%;background-color:lightcyan;border-radius:2px;padding:2%">
+                   <tr>
+                    <td>Address</td>
+                   <td>
+                       <textarea></textarea>>
+                   </td>
+                    </tr>
+                </table>
+              
+               </div>
+               
+
+        </div>
+    </form>
+</body>
+</html>

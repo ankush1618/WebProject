@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Car Wash</title> 
+    <style>
+      body {
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #c4c3c3;
+   
+}
+#wrapper {
+  
+   width: 100%;
+   max-width: 1185px;
+   margin: 2% auto;
+  background-color:rgb(251, 253, 253); 
+   box-shadow:3px 4px 4px #808080;
+   overflow: auto;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+ overflow: hidden;
+ background-color: #333;
+}
+
+.navbar a {
+ float: left;
+ font-size: 16px;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+}
+
+.dropdown {
+ float: left;
+ overflow: hidden;
+}
+
+.dropdown .dropbtn {
+ font-size: 16px;  
+ border: none;
+ outline: none;
+ color: white;
+ padding: 14px 16px;
+ background-color: inherit;
+ font-family: inherit;
+ margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+ background-color: #48d4c1;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ float: none;
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: left;
+}
+
+.dropdown-content a:hover {
+ background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+ display: block;
+}
+
+   #slider
+   {
+       float:left;
+       width:100%;
+       margin-top:3%;
+   }
+#book
+{  
+   float:left;
+   width:100%;
+}
+
+  </style>  
+</head>
+<body>
+   
+       <div id="wrapper" style="height:1200px">
+        <div class="navbar">
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT US</a>
+            <div class="dropdown">
+                <button class="dropbtn">DOMESTIC
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="/garden">GARDEN MAINTENACE</a>
+                  <a href="/apartment">APARTMENT CLEANING</a>
+                  <a href="/move_in">MOVE IN</a>
+                  <a href="/move_out">MOVE OUT</a>
+                  <a href="/renovation">AFTER RENOVATION CLEANING</a>
+          
+                </div>
+              </div> 
+              <div class="dropdown">
+                <button class="dropbtn">COMMERCIAL
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="/septic">SEPTIC TANK EVACUATION</a>
+                  <a href="/carpet">CARPET SHAMPOOING</a>
+                  <a href="/warehouse">WAREHOUSE CLEANING</a>
+                  <a href="/industrial">INDUSTRIAL CLEANING</a>
+                </div>
+              </div>     
+              <a href="/book">BOOK NOW</a>             
+            
+            <a href="/contact" style="float: right;">CONTACT US</a>                   
+            <a href="/sign" style="float: right;">SIGN UP</a>
+            <a href="/" style="float: right;">LOG IN</a>
+            
+        </div>
+                <form action="/book" method="post">
+                <%if (getrow.length >0) { %>
+
+                <span style="float: left;width: 100%;">
+                     <h4 style="float: right;">Welcome <%= getrow[0].name %> <a href="/" style="float: right; text-decoration: none;"> &nbsp; &nbsp;LOGOUT</a></h4>
+                    
+                </span>
+           <div style="float:left;width:100%;margin:2%">
+               <h1 style="TEXT-ALIGN: CENTER;color: #3cd3be;">BOOK AN APPOINTMENT</h1>
+
+           <table style="float:left;margin-left: 15%;width: 65%;background-color:lightcyan;border-radius:2px;padding:2%">
+          
+               <tr>
+                   <td>Name</td>
+                   <td><input type="label" value="<%=  getrow[0].name %>" name="name"/></td>
+                   <td></td>
+                   <td>Contact Number</td>
+                   <td><input type="label" value="<%=  getrow[0].contact_number %>" name="contact"/></td>
+               </tr>   
+            
+                <tr>
+                   <td>Email</td>
+                   <td><input type="label" value="<%=  getrow[0].email %>" name="email"/></td>
+                   <td></td>
+                   <td>Address</td>
+                   <td><input type="label" value="<%=  getrow[0].address %>" name="address"/></td>
+               </tr>
+               <table style="float:left;margin-left: 15%;width: 65%;background-color:lightcyan;border-radius:2px;padding:2%">
+                <tr>                   
+                   <td colspan="2">Services to be taken</td>
+                </tr>
+                <tr>
+                    <td style="width: 100%;font-size: 12px;">
+                       
+                             <select name="service" id="service">
+                                <optgroup label="Domestic">
+                                    <option value="Garden Maintenance">Garden Maintenance</option>
+                                    <option value="Apartment CLeaning">Apartment CLeaning</option>
+                                    <option value="Move IN">Move IN</option>
+                                    <option value="Move Out">Move Out</option>
+                                    <option value="After Renovation">After Renovation CLeaning</option>
+                                </optgroup>
+                                <optgroup label="Commercial">
+                                    <option value="Septic tank">Septic Tank Evacuation</option>
+                                    <option value="carpet shampooing">Carpet Shampooing</option>
+                                    <option value="warehouse cleaning">Warehouse Cleaning</option>
+                                    <option value="industrial cleaning">Industrial Cleaning</option>
+                                </optgroup>
+                            </select>
+ 
+                    </td>
+ 
+                </tr>
+              
+            </table>
+                <table style="float:left;margin-left: 15%;width: 65%;background-color:lightcyan;border-radius:2px;padding:2%">
+                    
+                    <tr><td></td><td></td></tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                             <input type="submit" style="background-color:black;color:#3cd3be;border:none;padding:2%;border-radius:5px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size:14px"></td>
+                    </tr>
+                </table>
+               <% }  else{ %>
+                
+               <span>
+                Please Login First</span>
+              <% } %>
+             </table>
+              
+              
+               </div>
+            </form>  
+
+        </div>
+   
+</body>
+</html>
