@@ -3,11 +3,11 @@ Cleaning Services Project
 
 PreRequisites:
 
-1) Download Visual Studio Code.
-2) Install Node js.
-3) Install MondoDB shell and MongoDB Compass.
-4) Install GIT .
-5) Create CleaningServices Folder in any location. Use mkdir CleaningServices
+1) Download Visual Studio Code -https://code.visualstudio.com/download
+2) Install Node js -https://nodejs.org/en/download/
+3) Install MondoDB shell and MongoDB Compass -https://www.mongodb.com/try/download/community?tck=docs_server
+4) Install GIT -https://git-scm.com/download/win
+5) Create CleaningServices folder in any location. Use mkdir CleaningServices
 6) cd CleaningServices
 7) Command used to get GIT projects in your system.
    •	git clone https://github.com/WebDeveloper16/WebProject.git
