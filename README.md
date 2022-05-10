@@ -13,7 +13,8 @@ PreRequisites:
    •	git clone https://github.com/WebDeveloper16/WebProject.git
 8) Import the Project to your Visual Studio.
 9) Open the new terminal . 
-10) To execute the project, use command :node index
-11) Now go to Url: https://localhost:5000 .
-12) You will see application opened in the browser.
+10) Use command- cd WebProject
+11) To execute the project, use command :node index
+12) Now go to Url: https://localhost:5000 .
+13) You will see application opened in the browser.
 
