@@ -14,7 +14,8 @@ PreRequisites:
 8) Import the Project to your Visual Studio.
 9) Open the new terminal . 
 10) Use command- cd WebProject
-11) To execute the project, use command :node index
-12) Now go to Url: https://localhost:5000 .
-13) You will see application opened in the browser.
+11) If in the folder structure node_module is not there then to install node module,in terminal run the command -npm install
+12) To execute the project, use command :node index
+13) Now go to Url: https://localhost:5000 .
+14) You will see application opened in the browser.
 
